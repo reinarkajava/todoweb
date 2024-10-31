@@ -1,13 +1,10 @@
 #!/bin/bash
 
-read -p "Faili nimi:" filename
 
 read -p "Sonum:" message
 
-echo $filename
-echo $message
 
-git add $filename
+git add -A
 
 git commit -m "$message"
 
