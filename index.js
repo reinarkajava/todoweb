@@ -48,7 +48,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
     let error = null
     if(req.body.task.trim().length == 0){
-        error = 'Please insert correct task data'
+        error = 'Ülesanne ei saa olla tühi'
         readFile('./tasks.json')
         .then((tasks) => {
             res.render('index', {
